@@ -7,6 +7,9 @@ Point of this project is that a lot of endpoint/AV/TD services (including antich
 hash and can detect certain software running. By changing the hash without altering the functionality of the program we
 circumvent these restrictions and we run potentially _malicious_ or _forbidden because company is retarded_ software.
 
+(with some additional measures implemented, as is it can fool the AV/EP solutions until analyzed, at least pack your software
+or obfuscate/protect it)
+
 # How to use
 Download the release, drag and drop your executable, it will mod it and rename it to **md5less.exe**. Run it. _Voila_.
 
