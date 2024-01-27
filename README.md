@@ -17,4 +17,5 @@ _or_
 
 Implement it into your software and bypass certain checks like a chad. You can set custom MD5 hashes too, enough spoonfeederino.
 
+**_if the PC you want to run your software on allows signed EXEs only, use SignTool and the Nvidia certificate that is leaked. "nv1d1aRules" is not a good password Nvidia._**
 ![](https://github.com/kmalbasic/MD5Less/blob/main/demo.gif)
