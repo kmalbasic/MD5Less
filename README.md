@@ -13,3 +13,5 @@ Download the release, drag and drop your executable, it will mod it and rename i
 _or_
 
 Implement it into your software and bypass certain checks like a chad. You can set custom MD5 hashes too, enough spoonfeederino.
+
+![](https://github.com/kmalbasic/MD5Less/blob/main/demo.gif)
