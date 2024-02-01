@@ -10,6 +10,11 @@ circumvent these restrictions and we run potentially _malicious_ or _forbidden b
 (with some additional measures implemented, as is it can fool the AV/EP solutions until analyzed, at least pack your software
 or obfuscate/protect it)
 
+# Additional simple stuff that might come in handy
+Added a simple loop that will iterate through the processes and verify if they are signed or not, might come in handy
+to people who don't want to use leaked certificates or just want to see what programs that are whitelisted are unsigned
+so they can use their hash.
+
 # How to use
 Download the release, drag and drop your executable, it will mod it and rename it to **md5less.exe**. Run it. _Voila_.
 
