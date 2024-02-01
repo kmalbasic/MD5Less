@@ -6,8 +6,8 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
+#include <atlstr.h>
 
-#include "memory.hpp"
 
 namespace MD5 {
 
@@ -15,9 +15,9 @@ namespace MD5 {
 
         char CurrentPath[MAX_PATH];
         std::string FullPath;
-
+        LPWSTR CurrentPathW = CA2CT(CurrentPath);
         if (Process == "") {
-            if (GetModuleFileName(NULL, CurrentPath, MAX_PATH) == 0) {
+            if (GetModuleFileName(NULL, CurrentPathW, MAX_PATH) == 0) {
                 printf_s("[-] GetModuleFileName == NULL \n");
                 return "";
             }
@@ -105,7 +105,7 @@ namespace MD5 {
         }
 
         char CurrentPath[MAX_PATH];
-
+        LPWSTR CurrentPathW = CA2CT(CurrentPath);
         // HANDLE Target = MEMORY::Attach(Process.c_str(), 0);     -- from test build
 
 
@@ -116,7 +116,7 @@ namespace MD5 {
             oFile = Process;
         }
         else {
-            if (GetModuleFileName(NULL, CurrentPath, MAX_PATH) == 0) {
+            if (GetModuleFileName(NULL, CurrentPathW, MAX_PATH) == 0) {
                 printf_s("[-] GetModuleFileName == NULL \n");
                 return false;
             }
