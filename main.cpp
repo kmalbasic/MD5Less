@@ -1,9 +1,11 @@
 #include <iostream>
-#include "md5.hpp"
+#include "memory.hpp"
+
+
 
 int main(int argc, char* argv[])
 {
-	system("cls"); // topkek
+	system("cls");
 	std::cout << "md5less - early as fuck build, works, nobody gives a fuck\n\n";
 
 	if (argv[1]) {
@@ -16,6 +18,8 @@ int main(int argc, char* argv[])
 			printf_s("[-] ChangeHash failed. \n"); // LMAO 2AM
 		}
 	}
+
+	MEMORY::IterateAllProcesses();
 
 	getchar();
 	return 0;
